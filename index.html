@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Akshar&family=IBM+Plex+Sans&family=IBM+Plex+Serif&family=Lobster&family=Merriweather:ital,wght@0,400;1,900&family=Montserrat:ital,wght@0,300;0,400;0,500;1,400&family=Oswald&family=Parisienne&family=Playball&family=Playfair+Display:wght@500&family=Roboto:wght@300;700&family=Rubik&family=Source+Sans+Pro:wght@600;900&family=Square+Peg&family=Tai+Heritage+Pro:wght@700&family=Tangerine:wght@400;700&family=Tiro+Devanagari+Sanskrit&display=swap" rel="stylesheet">
+      <title> Split your Bills</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+     
+      <div id="container">
+        
+        
+        <div class="header">
+          
+        <div class="header-div-h1"> <h1> Split Bills</h1>  </div>
+        <div class="header-div-h2"> <h2>  with your roommate(s)  </h2>  </div>
+        </div>
+        
+        
+        
+        
+         <form action="">
+           
+            
+           <div class="div_box">
+             
+         
+               <div class="div-box-p div-box-padding">  <p class="white"> Rent</p></div>   
+             
+        
+               
+          
+              
+               <div class="div-box-2">
+                 
+             
+               
+               
+                <div class="div-box-input div-box-padding">  <input class="input" type="text" placeholder="Rent" id="rent">  </div> 
+                 
+                 
+              </div>
+               
+                <div class="taxesAdd"> 
+                  
+                  
+                <div class="div-addTaxes" > <p id="addTaxesOne" class="add_taxes_p"> Add taxes </p> </div> 
+                  
+                  
+                  
+                <div class="taxechose"> <select  id="taxesOne" class="taxeButton"> 
+                <option disabled> Select an option </option>
+                <option value="0.00" selected> NO </option>
+                <option value="0.14975"> YES </option>
+                  </select>
+                     </div>
+                  
+                  </div> 
+         
+              
+              
+              
+            </div>
+
+            <div class="div_box">
+              
+             <div class=" div-box-p div-box-padding">  <p class="white"> Electricity</p>    </div> 
+              
+              <div class="div-box-2">
+                 
+            
+                
+                
+               
+               
+               <div class="div-box-input-electro div-box-padding">  <input  class="input" type="text" placeholder="Electricity" id="electricity">  </div> 
+                  </div>
+               
+               <div class="taxesAdd">
+                  <div class="div-addTaxes">  <p id="addTaxesTwo" class="add_taxes_p"> Add taxes </p> </div>
+                   <div class="taxechose">  <select  id="taxesTwo" class="taxeButton">
+                     <option disabled> Select an option </option>
+                     <option value="0.00" selected> NO </option>
+                     <option value="0.14975"> YES </option>
+                  </select>
+                     
+                     
+                     </div>
+               </div>
+            </div>
+
+           
+           
+           
+            <div class="div_box">
+              
+               <div class=" div-box-p div-box-padding"> <p class="white"> Internet </p> </div>
+              
+       
+                  <div class="div-box-2">
+             
+              
+            
+               
+              <div class=" div-box-input-internet div-box-padding"> <input  class="input" type="text" placeholder="Internet" id="internet">  </div>
+                 </div>
+             
+              
+              
+              <div class="taxesAdd"> 
+                
+             <div class="div-addTaxes"> 
+             <p id="addTaxesThree"  class="add_taxes_p"> Add taxes </p> </div>
+              
+                  <div class="taxechose">  <select  id="taxesThree" class="taxeButton">
+                     <option disabled> Select an option </option>
+                     <option value="0.00" selected> NO </option>
+                     <option value="0.14975"> YES </option>
+                  </select>
+                    
+                </div>
+             </div>
+               </div>
+               
+            
+            
+            <div class="div_box">
+              
+              
+              <div class="div-box-p div-box-padding" >  <p class="white"> Food </p></div>
+              
+              
+              <div class="div-box-2">
+                
+             
+               
+                 
+             <div class=" div-box-input div-box-padding">   <input  class="input" type="text" placeholder="Food" id="food"> </div>
+                
+                 </div>
+              
+              
+              
+               <div class="taxesAdd">  
+                 
+                 
+               <div class="div-addTaxes">   <p id="addTaxesFour" class="add_taxes_p"> Add taxes </p> </div>
+               <div class="taxechose">  <select  id="taxesFour" class="taxeButton">
+                  <option disabled> Select an option </option>
+                  <option value="0.00" selected> NO </option>
+                  <option value="0.14975"> YES </option>
+               </select>
+                 
+                 </div>
+            </div>
+         
+      </div>
+           
+           
+
+      <div class="div_box">
+        
+       <div> <p class="white">Number of Roommates</p>  </div>
+        
+        
+      <div class="divForRommates"> 
+        
+    <input type="text" placeholder="" id="roommate" class="roommates"> 
+   </div>
+      </div>
+
+
+
+      <br>
+      <div class="buttonCalculate">  
+      <button id="btn"> Calculate</button>
+     </div>
+      </form>
+
+
+      <div class="showTotalAmount" id="showTotalAmountToPay">
+        
+        
+       
+          
+         <div  class="amount" id="totalAmount">
+          <div class="amount-div-p">  <p class="add_taxes_p" >Total par person </p> </div>
+           <div class="total-amount"> <span> $  </span>  <span class="add_taxes_p" id="totalPerPerson">  </span> </div>
+          
+         </div>
+      </div>
+        
+        
+        
+        
+        
+        
+        
+        
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="index.js"></script>
+   </body>
+     
+</html>
